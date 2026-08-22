@@ -1,0 +1,96 @@
+body{
+    background-image: url(Bg_image/8331644.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+.login_form {
+    height: 450px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_field1, .input_field2 {
+    height: 32px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-bottom: 2px solid  rgba(255, 255, 255, 0.3);
+    padding-left: 10px;
+    outline: none;
+}
+
+.input_field1 {
+    margin: 0px 0px 30px 0px;
+}
+
+.Fp {
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    left: 105px;
+    top: 3px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button {
+    position: relative;
+    top: 45px;
+    width: 350px;
+    height: 32px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: opacity 0.5s 0.1s;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.footer {
+    position: relative;
+    top: 80px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}

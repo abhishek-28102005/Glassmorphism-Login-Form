@@ -1,7 +1,7 @@
 body{
     background-image: url(Bg_image/8331644.jpg);
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,50 +12,65 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
     color: #fff;
+    font-size: clamp(1.15rem, 10vw, 2rem);
 }
 
 .login_form {
-    height: 450px;
-    width: 500px;
+    max-width: 480px;
+    width: 90%;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4.5rem 0;
 }
 
 .input_field {
     display: flex;
     flex-direction: column;
+    width: 77%;
 }
 
 .input_field1, .input_field2 {
-    height: 32px;
-    width: 350px;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: none;
-    border-bottom: 2px solid  rgba(255, 255, 255, 0.3);
-    padding-left: 10px;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1.2rem;
     outline: none;
 }
 
 .input_field1 {
-    margin: 0px 0px 30px 0px;
+    margin-bottom: 30px;
+}
+
+.input_field1:focus,
+.input_field2:focus {
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+.input_field1::placeholder,
+.input_field2::placeholder {
+    color: rgba(255, 255, 255, 0.65);
 }
 
 .Fp {
+    width: 77%;
     color: #fff;
     font-size: 13px;
-    position: relative;
-    left: 105px;
-    top: 3px;
+    text-align: end;
+    padding-right: 0.8rem;
     text-decoration: none;
 }
 
@@ -64,17 +79,16 @@ a:hover{
 }
 
 button {
-    position: relative;
-    top: 45px;
-    width: 350px;
-    height: 32px;
+    width: calc(100% - 8rem);
     border-radius: 30px;
     border: none;
     background-color: #fff;
     cursor: pointer;
-    transition: opacity 0.5s 0.1s;
     font-size: 16px;
     opacity: 0.8;
+    margin: 2rem 4rem 0 4rem;
+    padding: 0.37rem 0;
+    transition: opacity 0.5s 0.1s;
 }
 
 button:hover {
@@ -82,8 +96,10 @@ button:hover {
 }
 
 .footer {
-    position: relative;
-    top: 80px;
+    width: 90%;
+    margin-top: 0.2rem;
+    text-align: center;
+    font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
 .footer a{
